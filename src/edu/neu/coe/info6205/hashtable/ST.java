@@ -7,7 +7,6 @@ public class ST<Key, Value> {
     protected int count;
     protected boolean collision = false;
 
-
     public ST(int M) {
         this.M = M;
         st = new Node[M];
@@ -46,7 +45,7 @@ public class ST<Key, Value> {
         int i = hash(key);
         if (st[i] != null) {
             collision = true;
-        }else{
+        } else {
             count--;
         }
         for (Node x = st[i]; x != null; x = x.next) {

@@ -52,11 +52,13 @@ public class HashTableTest {
         }
         boolean test = false;
         for (int i = 0; i < m; i++) {
-            if((st.st[i]!=null)&&(st.st[i].next!=null)) test=true;
+            if ((st.st[i] != null) && (st.st[i].next != null)) {
+                test = true;
+            }
         }
         assertTrue(test);
     }
-    
+
     @Test
     public void testHashTable5() {
         Random random = new Random();
